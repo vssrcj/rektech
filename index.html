@@ -9,7 +9,9 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background: linear-gradient(45deg, #f3f3f3 25%, transparent 25%, transparent 75%, #f3f3f3 75%, #f3f3f3),
+                        linear-gradient(45deg, #f3f3f3 25%, transparent 25%, transparent 75%, #f3f3f3 75%, #f3f3f3);
+            background-size: 40px 40px;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -21,6 +23,10 @@
         .container {
             max-width: 600px;
             margin: auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
@@ -31,28 +37,9 @@
             color: #666;
         }
 
-        .email-input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-
-        .subscribe-button {
-            background-color: #3498db;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .subscribe-button:hover {
-            background-color: #2185d0;
+        .contact-info {
+            font-size: 18px;
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -61,10 +48,7 @@
         <h1>REKTECH</h1>
         <p>Exciting things are coming! We're working on something awesome. Stay tuned for updates.</p>
         
-        <form action="mailto:info@rektech.co.za" method="post" enctype="text/plain">
-            <input type="email" class="email-input" placeholder="Enter your email" name="email" required>
-            <button type="submit" class="subscribe-button">Subscribe</button>
-        </form>
+        <p class="contact-info">Please contact us at <a href="mailto:info@rektech.co.za">info@rektech.co.za</a> for more information.</p>
     </div>
 </body>
 </html>
